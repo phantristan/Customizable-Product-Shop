@@ -66,4 +66,18 @@ public class ProductServiceImpl implements ProductService{
         }
         return (List<Product>) productRepository.findAll();
     }
+
+    @Override
+    public void decrementInventory(Long productId) {
+        Optional<Product> optionalProduct = productRepository.findById(productId);
+        if (optionalProduct.isPresent()) {
+            Product product = optionalProduct.get();
+            int currentInventory = product.getInv();
+
+            if (currentInventory > 0){
+                product.setInv(currentInventory - 1);
+                productRepository.save(product);
+            }
+        }
+    }
 }
