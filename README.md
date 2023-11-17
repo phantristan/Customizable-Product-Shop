@@ -24,3 +24,15 @@ For this project, you will use the Integrated Development Environment (IDE) link
 If you need additional support, please navigate to the course page and reach out to your course instructor.
 ## FUTURE USE
 Take this opportunity to create or add to a simple resume portfolio to highlight and showcase your work for future use in career search, experience, and education!
+
+Notes:
+
+Task C -
+    mainscreen.html
+        Line 14 & 25 - Change name to reflect custom shop
+
+Task D -
+    mainscreen.html
+        Line 18 - 22 - Added a nav section to link to about page
+    about.html
+        Created About Page
