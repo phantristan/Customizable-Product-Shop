@@ -57,3 +57,22 @@ Task F -
     buyconfirmation.html
         Create new file for confirmation page
 **mental note, check buyconfirmation links correctly
+Task G -
+    Part.java
+        Line 111 - 131 - Add minimum fields, maximum fields, getter methods, and setter methods
+        Line 133 - 135 - Checks if inventory is between/at minimum/maximum value
+    BootStrapData.java
+        Line 50 - 51, 60 - 61, 70 - 71, 80 - 81, 90 - 91 - Set min and max inventory
+    InhousePartForm.html
+        Line 23 - 24 - Add min/max text inputs
+    OutsourcedPartForm.html
+        Line 24 - 25 - Add min/max text inputs
+    application.properties
+        Line 6 - Change file name
+    AddInHousePartController.java
+        Line 43 - 45 - Uses isInventoryValid method to generate error message
+    AddOutsourcedPartController.java
+        Line 44 - 46 - Uses isInventoryValid method to generate error message
+Task H -
+Task I -
+Task J -

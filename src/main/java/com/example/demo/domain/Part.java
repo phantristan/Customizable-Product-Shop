@@ -107,4 +107,30 @@ public abstract class Part implements Serializable {
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
     }
+
+    @Min(value = 0, message = "Minimum inventory cannot be negative")
+    private int minInventory;
+
+    @Min(value = 0, message = "Maximum inventory cannot be negative")
+    private int maxInventory;
+
+    public int getMinInventory(){
+        return minInventory;
+    }
+
+    public void setMinInventory(int minInventory) {
+        this.minInventory = minInventory;
+    }
+
+    public int getMaxInventory() {
+        return maxInventory;
+    }
+
+    public void setMaxInventory(int maxInventory) {
+        this.maxInventory = maxInventory;
+    }
+
+    public boolean isInventoryValid() {
+        return inv >= minInventory && inv <= maxInventory;
+    }
 }
