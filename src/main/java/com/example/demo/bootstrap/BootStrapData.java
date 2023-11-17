@@ -39,14 +39,49 @@ public class BootStrapData implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
-       /*
-        OutsourcedPart o= new OutsourcedPart();
-        o.setCompanyName("Western Governors University");
-        o.setName("out test");
-        o.setInv(5);
-        o.setPrice(20.0);
-        o.setId(100L);
-        outsourcedPartRepository.save(o);
+        if (partRepository.count() == 0 && productRepository.count() == 0) {
+
+            OutsourcedPart uprights = new OutsourcedPart();
+            uprights.setCompanyName("Western Governors University");
+            uprights.setName("Uprights");
+            uprights.setInv(5);
+            uprights.setPrice(20.0);
+            uprights.setId(100L);
+            outsourcedPartRepository.save(uprights);
+
+            OutsourcedPart safetyPins = new OutsourcedPart();
+            safetyPins.setCompanyName("Western Governors University");
+            safetyPins.setName("Safety Pins");
+            safetyPins.setInv(5);
+            safetyPins.setPrice(20.0);
+            safetyPins.setId(101L);
+            outsourcedPartRepository.save(safetyPins);
+
+            OutsourcedPart jCups = new OutsourcedPart();
+            jCups.setCompanyName("Western Governors University");
+            jCups.setName("J-Cups");
+            jCups.setInv(5);
+            jCups.setPrice(20.0);
+            jCups.setId(102L);
+            outsourcedPartRepository.save(jCups);
+
+            OutsourcedPart base = new OutsourcedPart();
+            base.setCompanyName("Western Governors University");
+            base.setName("Base");
+            base.setInv(5);
+            base.setPrice(20.0);
+            base.setId(103L);
+            outsourcedPartRepository.save(base);
+
+            OutsourcedPart pegs = new OutsourcedPart();
+            pegs.setCompanyName("Western Governors University");
+            pegs.setName("Pegs");
+            pegs.setInv(5);
+            pegs.setPrice(20.0);
+            pegs.setId(104L);
+            outsourcedPartRepository.save(pegs);
+
+        /*
         OutsourcedPart thePart=null;
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
@@ -55,17 +90,23 @@ public class BootStrapData implements CommandLineRunner {
 
         System.out.println(thePart.getCompanyName());
         */
-        List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
-        for(OutsourcedPart part:outsourcedParts){
-            System.out.println(part.getName()+" "+part.getCompanyName());
-        }
+            List<OutsourcedPart> outsourcedParts = (List<OutsourcedPart>) outsourcedPartRepository.findAll();
+            for (OutsourcedPart part : outsourcedParts) {
+                System.out.println(part.getName() + " " + part.getCompanyName());
+            }
 
-        /*
-        Product bicycle= new Product("bicycle",100.0,15);
-        Product unicycle= new Product("unicycle",100.0,15);
-        productRepository.save(bicycle);
-        productRepository.save(unicycle);
-        */
+            Product halfRack = new Product("Half Rack", 150.0, 15);
+            Product fullRack = new Product("Full Rack", 200.0, 15);
+            Product wallMounted = new Product("Wall-Mounted Rack", 175.00, 15);
+            Product comboRack = new Product("Combo Rack", 250.00, 15);
+            Product rig = new Product("Rig", 300.0, 15);
+
+            productRepository.save(halfRack);
+            productRepository.save(fullRack);
+            productRepository.save(wallMounted);
+            productRepository.save(comboRack);
+            productRepository.save(rig);
+        }
 
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());
