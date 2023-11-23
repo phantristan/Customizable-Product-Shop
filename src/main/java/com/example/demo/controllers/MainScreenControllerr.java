@@ -61,4 +61,9 @@ public class MainScreenControllerr {
 
         return "redirect:/buyconfirmation";
     }
+
+    @GetMapping("/buyconfirmation")
+    public String showBuyConfirmationPage(){
+        return "buyconfirmation";
+    }
 }

@@ -37,26 +37,23 @@ Task D -
         Created About Page
     AboutController.java
         Create controller for "about" page
-**mental note, check if mainscreen button is formatted correctly on about page
 Task E - 
     BootStrapData.java
         Line 42 - If statement to check if partRepository and productRepository are empty
         Line 44 - 92 - Create parts
         Line 108 - 128 - Create products
-**mental note, check products are created correctly
 Task F - 
     mainscreen.html
         Line 95 - 98 - Add "Buy Now" button
     MainScreenControllerr.java
         Line 13 - 15 - Import statements
-        Line 58 - 63 - Create controller method
+        Line 58 - 68 - Create controller method
     ProductService.java
         Line 20 - Define decrementInventory method
     ProductServiceImpl.java
         Line 70 - 82 - Implement decrementInventory
     buyconfirmation.html
         Create new file for confirmation page
-**mental note, check buyconfirmation links correctly
 Task G -
     Part.java
         Line 111 - 131 - Add minimum fields, maximum fields, getter methods, and setter methods
