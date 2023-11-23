@@ -57,13 +57,22 @@ public class MainScreenControllerr {
 
     @PostMapping("/buyProduct")
     public String buyProduct(@RequestParam Long productId){
-        productService.decrementInventory(productId);
+        boolean purchaseSuccessful = productService.decrementInventory(productId);
 
-        return "redirect:/buyconfirmation";
+        if (purchaseSuccessful) {
+            return "redirect:/buyconfirmation";
+        } else {
+            return "redirect:/purchaseunsuccessful";
+        }
     }
 
     @GetMapping("/buyconfirmation")
     public String showBuyConfirmationPage(){
         return "buyconfirmation";
+    }
+
+    @GetMapping("/purchaseunsuccessful")
+    public String showPurchaseUnsuccessfulPage() {
+        return "purchaseunsuccessful";
     }
 }

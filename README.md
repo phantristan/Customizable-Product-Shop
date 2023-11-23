@@ -47,11 +47,11 @@ Task F -
         Line 95 - 98 - Add "Buy Now" button
     MainScreenControllerr.java
         Line 13 - 15 - Import statements
-        Line 58 - 68 - Create controller method
+        Line 58 - 77 - Create controller method
     ProductService.java
-        Line 20 - Define decrementInventory method
+        Line 19 - Define decrementInventory method
     ProductServiceImpl.java
-        Line 70 - 82 - Implement decrementInventory
+        Line 69 - 81 - Implement decrementInventory
     buyconfirmation.html
         Create new file for confirmation page
 Task G -

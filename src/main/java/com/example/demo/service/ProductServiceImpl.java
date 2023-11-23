@@ -1,8 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.domain.Part;
 import com.example.demo.domain.Product;
-import com.example.demo.repositories.PartRepository;
 import com.example.demo.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -68,7 +66,7 @@ public class ProductServiceImpl implements ProductService{
     }
 
     @Override
-    public void decrementInventory(Long productId) {
+    public boolean decrementInventory(Long productId) {
         Optional<Product> optionalProduct = productRepository.findById(productId);
         if (optionalProduct.isPresent()) {
             Product product = optionalProduct.get();
@@ -77,7 +75,9 @@ public class ProductServiceImpl implements ProductService{
             if (currentInventory > 0){
                 product.setInv(currentInventory - 1);
                 productRepository.save(product);
+                return true;
             }
         }
+        return false;
     }
 }
