@@ -44,7 +44,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart uprights = new OutsourcedPart();
             uprights.setCompanyName("Western Governors University");
             uprights.setName("Uprights");
-            uprights.setInv(5);
+            uprights.setInv(30);
             uprights.setPrice(20.0);
             uprights.setId(100L);
             uprights.setMinInventory(4);
@@ -54,7 +54,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart safetyPins = new OutsourcedPart();
             safetyPins.setCompanyName("Western Governors University");
             safetyPins.setName("Safety Pins");
-            safetyPins.setInv(5);
+            safetyPins.setInv(15);
             safetyPins.setPrice(20.0);
             safetyPins.setId(101L);
             safetyPins.setMinInventory(2);
@@ -64,7 +64,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart jCups = new OutsourcedPart();
             jCups.setCompanyName("Western Governors University");
             jCups.setName("J-Cups");
-            jCups.setInv(5);
+            jCups.setInv(15);
             jCups.setPrice(20.0);
             jCups.setId(102L);
             jCups.setMinInventory(2);
@@ -74,7 +74,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart base = new OutsourcedPart();
             base.setCompanyName("Western Governors University");
             base.setName("Base");
-            base.setInv(5);
+            base.setInv(15);
             base.setPrice(20.0);
             base.setId(103L);
             base.setMinInventory(2);
@@ -84,7 +84,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart pegs = new OutsourcedPart();
             pegs.setCompanyName("Western Governors University");
             pegs.setName("Pegs");
-            pegs.setInv(5);
+            pegs.setInv(30);
             pegs.setPrice(20.0);
             pegs.setId(104L);
             pegs.setMinInventory(4);
