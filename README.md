@@ -46,7 +46,7 @@ Task E -
 **mental note, check products are created correctly
 Task F - 
     mainscreen.html
-        Line 91 - 94 - Add "Buy Now" button
+        Line 95 - 98 - Add "Buy Now" button
     MainScreenControllerr.java
         Line 13 - 15 - Import statements
         Line 58 - 63 - Create controller method
@@ -73,6 +73,8 @@ Task G -
         Line 43 - 45 - Uses isInventoryValid method to generate error message
     AddOutsourcedPartController.java
         Line 44 - 46 - Uses isInventoryValid method to generate error message
+    mainscreen.html
+        Line 44 - 45 & 54 - 55 - Add min/max columns
 Task H -
     AddInHousePartController.java
         Line 47 - 53 - Displays more specific error messages regarding invalid inventory
