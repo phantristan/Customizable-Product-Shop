@@ -156,4 +156,40 @@ class PartTest {
         partOut.setId(1l);
         assertEquals(partIn.hashCode(),partOut.hashCode());
     }
+
+    @Test
+    void getMinInventory() {
+        int minInventory = 2;
+        partIn.setMinInventory(minInventory);
+        assertEquals(minInventory, partIn.getMinInventory());
+        partOut.setMinInventory(minInventory);
+        assertEquals(minInventory, partOut.getMinInventory());
+    }
+
+    @Test
+    void setMinInventory() {
+        int minInventory = 2;
+        partIn.setMinInventory(minInventory);
+        assertEquals(minInventory, partIn.getMinInventory());
+        partOut.setMinInventory(minInventory);
+        assertEquals(minInventory, partOut.getMinInventory());
+    }
+
+    @Test
+    void getMaxInventory() {
+        int maxInventory = 40;
+        partIn.setMaxInventory(maxInventory);
+        assertEquals(maxInventory, partIn.getMaxInventory());
+        partOut.setMaxInventory(maxInventory);
+        assertEquals(maxInventory, partOut.getMaxInventory());
+    }
+
+    @Test
+    void setMaxInventory() {
+        int maxInventory = 40;
+        partIn.setMaxInventory(maxInventory);
+        assertEquals(maxInventory, partIn.getMaxInventory());
+        partOut.setMaxInventory(maxInventory);
+        assertEquals(maxInventory, partOut.getMaxInventory());
+    }
 }
