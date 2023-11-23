@@ -17,7 +17,7 @@ import java.lang.annotation.Target;
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ValidEnufParts {
-    String message() default "There aren't enough parts in inventory!";
+    String message() default "The product inventory will cause the associate part(s) to fall below their minimum stock requirements or exceed their maximum stock allowed.";
     Class<?> [] groups() default {};
     Class<? extends Payload> [] payload() default {};
 

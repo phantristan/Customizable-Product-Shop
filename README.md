@@ -74,5 +74,13 @@ Task G -
     AddOutsourcedPartController.java
         Line 44 - 46 - Uses isInventoryValid method to generate error message
 Task H -
+    AddInHousePartController.java
+        Line 47 - 53 - Displays more specific error messages regarding invalid inventory
+    AddOutsourcedPartController.java
+        Line 48 - 54 - Displays more specific error messages regarding invalid inventory
+    EnufPartsValidator.java
+        Line 36 - Add additional requirement in if statement to check if any parts would fall below minimum
+    ValidEnufParts
+        Line 20 - Update message to be more specific
 Task I -
 Task J -

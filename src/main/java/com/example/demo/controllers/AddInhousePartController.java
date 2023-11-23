@@ -40,8 +40,16 @@ public class AddInhousePartController{
     public String submitForm(@Valid @ModelAttribute("inhousepart") InhousePart part, BindingResult theBindingResult, Model theModel){
         theModel.addAttribute("inhousepart",part);
 
-        if(!part.isInventoryValid()){
+        /* if(!part.isInventoryValid()){
             theBindingResult.rejectValue("inv", "error.inhousepart", "Inventory must be between minimum and maximum values");
+        } */
+
+        if (part.getInv() < part.getMinInventory()) {
+            theBindingResult.rejectValue("inv", "error.inhousepart", "Inventory is below the minimum required.");
+        }
+
+        if (part.getInv() > part.getMaxInventory()) {
+            theBindingResult.rejectValue("inv", "error.inhousepart", "Inventory is above the maximum allowed.");
         }
 
         if(theBindingResult.hasErrors()){
