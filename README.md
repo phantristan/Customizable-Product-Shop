@@ -54,6 +54,8 @@ Task F -
         Line 69 - 81 - Implement decrementInventory
     buyconfirmation.html
         Create new file for confirmation page
+    purchaseunsuccessful.html 
+        Create new file for unsuccessful purchase
 Task G -
     Part.java
         Line 111 - 131 - Add minimum fields, maximum fields, getter methods, and setter methods
