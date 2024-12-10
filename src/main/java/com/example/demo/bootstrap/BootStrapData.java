@@ -42,7 +42,7 @@ public class BootStrapData implements CommandLineRunner {
         if (partRepository.count() == 0 && productRepository.count() == 0) {
 
             OutsourcedPart uprights = new OutsourcedPart();
-            uprights.setCompanyName("Western Governors University");
+            uprights.setCompanyName("Western Barbell");
             uprights.setName("Uprights");
             uprights.setInv(30);
             uprights.setPrice(20.0);
@@ -52,7 +52,7 @@ public class BootStrapData implements CommandLineRunner {
             outsourcedPartRepository.save(uprights);
 
             OutsourcedPart safetyPins = new OutsourcedPart();
-            safetyPins.setCompanyName("Western Governors University");
+            safetyPins.setCompanyName("Western Barbell");
             safetyPins.setName("Safety Pins");
             safetyPins.setInv(15);
             safetyPins.setPrice(20.0);
@@ -62,7 +62,7 @@ public class BootStrapData implements CommandLineRunner {
             outsourcedPartRepository.save(safetyPins);
 
             OutsourcedPart jCups = new OutsourcedPart();
-            jCups.setCompanyName("Western Governors University");
+            jCups.setCompanyName("Western Barbell");
             jCups.setName("J-Cups");
             jCups.setInv(15);
             jCups.setPrice(20.0);
@@ -72,7 +72,7 @@ public class BootStrapData implements CommandLineRunner {
             outsourcedPartRepository.save(jCups);
 
             OutsourcedPart base = new OutsourcedPart();
-            base.setCompanyName("Western Governors University");
+            base.setCompanyName("Western Barbell");
             base.setName("Base");
             base.setInv(15);
             base.setPrice(20.0);
@@ -82,7 +82,7 @@ public class BootStrapData implements CommandLineRunner {
             outsourcedPartRepository.save(base);
 
             OutsourcedPart pegs = new OutsourcedPart();
-            pegs.setCompanyName("Western Governors University");
+            pegs.setCompanyName("Western Barbell");
             pegs.setName("Pegs");
             pegs.setInv(30);
             pegs.setPrice(20.0);
